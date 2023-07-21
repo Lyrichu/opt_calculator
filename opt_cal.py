@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-# author:cchu4@iflytek.com
+# author:lyrichu@foxmail.com
 # @Time: 2023/7/20 15:06
 
 import random
