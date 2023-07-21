@@ -1,0 +1,59 @@
+/* QLineEdit - 输入框样式 */
+QLineEdit {
+    background-color: #F5F5F5;
+    border: 1px solid #C0C0C0;
+    padding: 5px;
+    color: #000000;
+    font-family: "Arial";
+    font-size: 14px;
+}
+
+/* QLabel - 标签样式 */
+QLabel {
+    color: #000000;
+    font-family: "Arial";
+    font-size: 16px;
+}
+
+/* QPlainTextEdit - 多行文本输入框样式 */
+QPlainTextEdit {
+    background-color: #F5F5F5;
+    border: 1px solid #C0C0C0;
+    padding: 5px;
+    color: #000000;
+    font-family: "Arial";
+    font-size: 14px;
+}
+
+/* QPushButton - 按钮样式 */
+QPushButton {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    font-family: "Arial";
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+QPushButton:hover {
+    background-color: #0056b3;
+}
+QPushButton:pressed {
+    background-color: #004085;
+}
+
+/* QComboBox - 下拉框样式 */
+QComboBox {
+    background-color: #F5F5F5;
+    border: 1px solid #C0C0C0;
+    padding: 5px;
+    color: #000000;
+    font-family: "Arial";
+    font-size: 14px;
+}
+QComboBox QAbstractItemView {
+    selection-background-color: #007BFF;
+}
+QComboBox::drop-down {
+    border: none;
+}
