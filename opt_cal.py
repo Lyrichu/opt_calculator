@@ -236,7 +236,6 @@ class MainWindow(QMainWindow):
         self.layout.addWidget(self.log_area)
 
         self.time_label = QLabel()
-        self.layout.addWidget(QLabel("Elapsed time:"))
         self.layout.addWidget(self.time_label)
 
         self.container = QWidget()
@@ -381,10 +380,10 @@ class MainWindow(QMainWindow):
 
             func = lambdify(vars_sympy, func_sympy, 'numpy')
 
-            bounds_str = self.bounds_input.text().split(',')
-            if len(bounds_str) == 0:
+            if len(self.bounds_input.text()) == 0:
                 bounds = [(-1e6, 1e6) for _ in range(len(var_names))]
             else:
+                bounds_str = self.bounds_input.text().split(',')
                 bounds = [(float(b.split(':')[0]), float(b.split(':')[1])) for b in bounds_str]
 
             constraints_str = self.constraints_input.toPlainText()
