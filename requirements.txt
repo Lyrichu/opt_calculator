@@ -4,3 +4,4 @@ scipy
 deap
 pyswarm
 sympy
+qt-material

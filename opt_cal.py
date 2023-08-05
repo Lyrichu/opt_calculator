@@ -13,6 +13,7 @@ from PySide6.QtCore import QThread, Signal
 from PySide6.QtGui import QAction
 from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QPushButton, QLineEdit, QPlainTextEdit, QLabel, \
     QComboBox, QWidget, QGridLayout, QDoubleSpinBox, QSpinBox
+from qt_material import apply_stylesheet
 from deap import base, creator, tools, algorithms
 from pyswarm import pso
 from scipy.optimize import minimize, NonlinearConstraint
@@ -437,8 +438,9 @@ class MainWindow(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    with open("style.qss", "r") as fin:
-        app.setStyleSheet(fin.read())
+    # with open("style.qss", "r") as fin:
+    #     app.setStyleSheet(fin.read())
+    apply_stylesheet(app, "light_blue.xml")
     window = MainWindow()
     window.show()
     sys.exit(app.exec())
